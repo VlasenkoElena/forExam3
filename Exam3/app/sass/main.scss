@@ -33,6 +33,11 @@ a {
     text-transform: uppercase;
 }
 
+.h3 {
+    font: 700 24px/24px 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+
 input {
     outline: none;
 }
@@ -133,32 +138,115 @@ body {
 
 .about {
     margin-top: 5rem;
-    height: 35rem;
+    height: 600px;
     &-img {
         background: url(../img/about-us.png);
         background-size: cover;
         background-position: center;
+        height: 500px;
     }
     &-content {
-        margin-top: 100px;
+        margin-top: 80px;
         font-size: 20px;
-        height: 100%;
     }
 }
 
-@media screen and (max-width: 992px) {
-}
+@media screen and (max-width: 992px) {}
+
 
 /*ABOUT*/
 
 .services {
-    min-height: 800px;
-    padding: 50px 0;
+    min-height: 750px;
+    padding-top: 50px;
     &-img {
         background: url(../img/service.png);
         background-size: cover;
-        border: 1px solid red;
+        color: white;
+        min-height: 700px;
+        width: 300px;
     }
+    &-card {
+        max-width: 380px;
+        height: 350px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--design {
+            background-color: #dbdbdb;
+        }
+        &:hover {
+            background-color: #9f9acf;
+            transform: scale(1.02);
+        }
+    }
+    &-text {
+        width: 190px;
+        font-style: italic;
+    }
+    &-quote {
+        font-style: italic;
+        &--autor {
+            font-weight: 700;
+        }
+    }
+}
+
+
+/*WORKS*/
+
+.works {
+    width: 100%;
+    min-height: 1000px;
+    background: url(../img/works.png);
+    background-size: cover;
+    &-slider {
+        width: 1110px;
+        height: 550px;
+        margin-top: 50px;
+    }
+    &-item {
+        width: 1100px;
+        height: 540px;
+    }
+}
+
+.slick-arrow {
+    height: 70px;
+    width: 70px;
+    &-prev:before {
+        font-size: 40px;
+    }
+}
+
+//SLIDER
+.slick-dots li.slick-active button {
+    background: #ebebeb;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    color: transparent;
+    border: 2px solid #ebebeb;
+    border-radius: 50%;
+    background: transparent;
+    outline: none;
+}
+
+.slick-dots li,
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+li .slick-active {
+    width: 10px;
+    height: 10px;
+    background-color: white;
 }
 
 
@@ -304,7 +392,7 @@ body {
         }
     }
     &-social {
-        color:  #9f9acf;
+        color: #9f9acf;
         font-size: 30px;
         margin-top: 20px;
     }

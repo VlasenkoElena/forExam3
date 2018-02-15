@@ -10,24 +10,14 @@ $(document).ready(function() {
     $('.nav-mobile').click(function() {
         $('.nav-mobile--menu').toggleClass('menu-open');
     });
+});
 
+//SLICK SLIDER
 
-    // IZOTOP
-    var grid = $('.portfolio-works').isotope({
-        itemSelector: '.works-item',
-        layoutMode: 'masonry',
-        masonry: {
-            gutter: 20
-        }
-    });
-
-    $('.portfolio-filter').click(function() {
-        let filterValue = $(this).attr('data-filter');
-        grid.isotope({ filter: filterValue });
-
-        $(".portfolio-filter").removeClass("active-filter");
-        $(this).addClass("active-filter");
-    });
+$('.works-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300
 });
 
 // INPUTS EVENTS
