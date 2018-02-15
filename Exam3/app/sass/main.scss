@@ -53,6 +53,7 @@ body {
 
 .button {
     color: grey;
+    font-size: 18px;
     font-style: italic;
     width: 165px;
     height: 50px;
@@ -60,10 +61,17 @@ body {
     cursor: pointer;
     border: 1px solid grey;
     background-color: transparent;
-    font: 16px/1 'PT Sans', sans-serif;
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         transform: scale(1.01);
+    }
+    &-works {
+        color: white;
+        border: 1px solid white;
+        &:hover {
+         color:   #9f9acf; 
+         border: 1px solid #9f9acf;
+        }
     }
 }
 
@@ -441,9 +449,4 @@ li .slick-active {
 .contact-email {
     font: 14px/48px "Montserrat", sans-serif;
     text-transform: none;
-}
-
-#map {
-    width: 550px;
-    height: 840px;
 }
