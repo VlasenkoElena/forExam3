@@ -29,45 +29,43 @@
 
     <header class="header wow fadeInUp animated">
         <div class="container">
-            <nav class="row d-flex justify-content-between">
+            <div class="row justify-content-between">
                 <div>
                     <a href="index.html"><img src="" alt="LOGO"></a>
                 </div>
-                <div class="nav-mobile"><img src=""></div>
-                <div class="nav-mobile--menu">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact us</a></li>
-                    </ul>
-                </div>
+                <nav class="d-flex">
+                    <div class="nav-mobile--menu">
+                        <li class="ba-menu__item" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </div>
 
+                    <div class="nav-menu">
+                        <ul class="d-flex ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#works">Works</a>
 
-                <div class="nav-menu">
-                    <ul class="d-flex ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#works">Works</a>
+                            </li>
 
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
 
         <div class="header-content m-auto text-center">
@@ -159,43 +157,156 @@
                 </div>
             </div>
             <div class="container">
-                <div class="d-flex justify-content-center">
+                <div class="row justify-content-center">
                     <div class="button button-works">View gallery </div>
                 </div>
             </div>
         </section>
 
+        <!--OUR TEAM-->
 
+        <section class="team">
+            <div class="container wow fadeInUp">
+                <div class="row d-flex flex-column align-items-center">
+                    <img class="pt-5" src="img/icon-team.png" alt="icon">
+                    <h2 class="h2 h2--team text-center mt-5">Meet our team</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="team-slider">
 
-
-
-
-
-
-
-        <div class="container-fluid letter">
-            <div class="container pt-5">
-                <div class="row wow fadeInUp animated" data-wow-delay=".1s">
-                    <div class="col-lg-6 col-sm-12">
-                        <h1 class="title-letter">You think we`re cool? let`s work together
-                        </h1>
-                        <button class="btn-letter">Get in touch</button>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 letter-form">
-                        <h2 class="tittle-form">stay informed with our newsletter
-                        </h2>
-                        <p class="pl-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. molestiae voluptatibus atque veritatis exercitationem modi.</p>
-                        <form action="#" class="pl-2">
-                            <div class="input_1">
-                                <input class="inpute-form" type="text">
-                                <span class="">Your email</span>
+                    <div class="team-cards">
+                        <div class="team-cards--wrap">
+                            <img class="team-img" src="img/Miguel.jpg" alt="">
+                            <div class="team-info">
+                                <h3>Miguel Obrien</h3>
+                                <p>Seo & Founder</p>
                             </div>
-                            <button class=" button button--form">Send</button>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-skype-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-dribbble-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-googleplus-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-twitter"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-facebook"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-cards">
+                        <div class="team-cards--wrap">
+                            <img class="team-img" src="img/jackie.jpg" alt="">
+                            <div class="team-info">
+                                <h3>Jackie Carrol</h3>
+                                <p>Art director</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-skype-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-dribbble-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-googleplus-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-twitter"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-facebook"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-cards">
+                        <div class="team-cards--wrap">
+
+                            <img class="team-img" src="img/ida.jpg" alt="">
+                            <div class="team-info">
+                                <h3>Ida Morison</h3>
+                                <p>Design</p>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-skype-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-dribbble-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-googleplus-outline"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-twitter"></i>
+                                </div>
+                                <div class="footer-icon">
+                                    <i class="footer-social ion-social-facebook"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--CONTACT-->
+
+        <section id="contact" class="contact wow fadeInUp">
+            <div id="map"></div>
+            <div class="container-fluid contact-content">
+                <div class="row d-flex flex-column align-items-center">
+                    <img class="pt-5" src="img/contact.png" alt="icon">
+                    <h2 class="h2 text-center mt-5">Get in touch</h2>
+                </div>
+                <div class="container">
+                    <div class="d-flex contact-info">
+                        <div class="contact-info--img d-flex justify-content-center align-items-center">
+                            <img src="img/icon-address.png" alt="home" />
+                        </div>
+                        <p class="contact-info--text text-center">
+                            Ikan Piranha<br> Atas 220C Malang - East<br> Java Indonesia
+                        </p>
+                    </div>
+                    <div class="d-flex contact-info mt-1">
+                        <div class="contact-info--img d-flex justify-content-center align-items-center">
+                            <img src="img/icon-phone.png" alt="phone" />
+                        </div>
+                        <p class="contact-info--text text-center">
+                            000-000-000
+                        </p>
+                    </div>
+                </div>
+                <div class="container d-flex flex-column">
+                    <div class="row">
+                        <form method="get" action="" class="contact-forms">
+                            <div class="d-flex mb-4">
+                                <input type="text" required class="contact-input" placeholder="Your Name *">
+                                <input type="email" required class="contact-input ml-4" placeholder="Your Email *">
+                            </div>
+                            <textarea cols="50" rows="10" placeholder="Your Message *" class="contact-input contact-input--textarea"></textarea>
                         </form>
+                    </div>
+                    <button class="contact-btn mt-4 m-auto">Send Messadge</button>
+
+                    <div>
+                        <a class="content-scroll" href="#home"></a>
                     </div>
                 </div>
             </div>
-        </div>
+
     </main>
 
     <!--FOOTER-->
@@ -229,6 +340,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+    <!--GOOGLE map-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="js/js.js"></script>
